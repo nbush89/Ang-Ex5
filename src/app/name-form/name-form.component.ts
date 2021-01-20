@@ -7,12 +7,12 @@ import { NameService } from "../name.service";
   styleUrls: ["./name-form.component.css"],
 })
 export class NameFormComponent implements OnInit {
-  name: string;
+  nameInput: string;
   constructor(private service: NameService) {}
 
   ngOnInit(): void {}
-  setName() {
-    this.service.setName(this.name);
+  setNewName() {
+    this.service.setName(this.nameInput);
     console.log("I was clicked");
   }
 }

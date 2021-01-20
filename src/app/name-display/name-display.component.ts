@@ -7,11 +7,11 @@ import { NameService } from "../name.service";
   styleUrls: ["./name-display.component.css"],
 })
 export class NameDisplayComponent implements OnInit {
-  name1: string;
+  newName: string;
   constructor(private service: NameService) {}
 
   ngOnInit(): void {}
-  getName() {
-    this.name1 = this.service.getName();
+  getNewName() {
+    this.newName = this.service.getName();
   }
 }
